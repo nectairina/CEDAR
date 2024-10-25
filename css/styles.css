@@ -5,3 +5,18 @@
 .mi-color-fondo {
     background-color: white;
 }
+
+.fondo-inicio {
+    height: 700px;
+    width: 100%;
+    background-color: rgb(17, 49, 17);
+}
+
+.categorias-productos {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.texto-categorias {
+    color: white;
+}
