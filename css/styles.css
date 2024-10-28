@@ -25,3 +25,7 @@
     color: rgb(28, 99, 48);
     font-size: 1.5em;
 }
+.offcanvas {
+--bs-offcanvas-width: 300px;
+}
+
