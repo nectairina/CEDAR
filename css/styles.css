@@ -6,21 +6,6 @@
     background-color: white;
 }
 
-.fondo-inicio {
-    height: 700px;
-    width: 100%;
-    background-color: rgb(17, 49, 17);
-}
-
-.categorias-productos {
-    margin-top: 50px;
-    padding: 0;
-}
-
-.texto-categorias {
-    color: white;
-}
-
 .unlock-regular {
     font-family: "Unlock", serif;
     font-weight: 400;
@@ -36,4 +21,96 @@
 .offcanvas {
 --bs-offcanvas-width: 300px;
 }
+
+/* Estilo del fondo del modal */
+#newsletterModal {
+    background-color: rgba(0, 0, 0, 0.263); /* Fondo blanco semi-transparente */
+  }
+  
+  /* Estilo de la cabecera del modal */
+  #newsletterModal .modal-header {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+  }
+  
+
+  #newsletterModal .modal-title {
+    font-family: 'Helvetica', sans-serif; 
+    font-size: 1.5rem;
+  }
+  
+  #newsletterModal .modal-body {
+    text-align: center;
+    font-size: 1rem; 
+    color: #535252; 
+  }
+  
+  #newsletterModal .btn-close {
+    background-color: transparent; 
+    border: none; 
+  }
+  
+  #newsletterModal .form-label {
+    font-weight: bold; 
+    color: #6b6b6b; 
+  }
+
+  /* Estilo del formulario */
+  #newsletterModal form {
+    margin-top: 10px; /* Espacio superior */
+  }
+  
+  /* Estilo del botón de suscripción */
+  #newsletterModal .btn-primary {
+    background-color: #184a24; /* Cambiar color de fondo */
+    border: none; /* Sin borde */
+  }
+  
+  #newsletterModal .btn-primary:hover {
+    background-color: #218838; /* Color al pasar el ratón */
+  }
+
+  #subscribeToast {
+    z-index: 1055;
+  }
+
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img,
+.gallery-img-hover {
+
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.gallery-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-container:hover .gallery-img {
+    opacity: 0;
+}
+
+.image-container:hover .gallery-img-hover {
+    opacity: 1;
+}
+
+.category-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 4vw;; 
+}
+
 
