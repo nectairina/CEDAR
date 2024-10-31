@@ -5,18 +5,15 @@ window.onload = function() {
 };
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  // Cerrar el modal al enviar el formulario
   document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario para demostración
+    event.preventDefault(); 
     var modalElement = bootstrap.Modal.getInstance(document.getElementById('newsletterModal'));
-    modalElement.hide(); // Cerrar el modal
+    modalElement.hide(); 
 
-    // Mostrar el toast
     var toastElement = document.getElementById('subscribeToast');
     var toast = new bootstrap.Toast(toastElement);
-    toast.show(); // Mostrar el toast
+    toast.show(); 
   });
 });
 
@@ -28,10 +25,18 @@ document.querySelectorAll('.categoria-item').forEach(item => {
   });
 });
 
-const carousel = new bootstrap.Carousel('#myCarousel', {
-  interval: 3000,
-  wrap: true,
-  pause: false,
-  touch: false
-})
+const images = document.querySelectorAll('.banner-image');
+const logos = document.querySelectorAll('.banner-logo');
+let currentIndex = 0;
 
+function changeImage() {
+  images[currentIndex].classList.remove('active');
+  logos[currentIndex].classList.remove('active');
+
+  currentIndex = (currentIndex + 1) % images.length;
+
+  images[currentIndex].classList.add('active');
+  logos[currentIndex].classList.add('active');
+}
+
+setInterval(changeImage, 3000);
