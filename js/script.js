@@ -1,19 +1,18 @@
 
-window.onload = function() {
-  var myModal = new bootstrap.Modal(document.getElementById('newsletterModal'));
-  myModal.show();
-};
-
-
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    var modalElement = bootstrap.Modal.getInstance(document.getElementById('newsletterModal'));
-    modalElement.hide(); 
+  var myModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+  myModal.show();
 
-    var toastElement = document.getElementById('subscribeToast');
-    var toast = new bootstrap.Toast(toastElement);
-    toast.show(); 
+  var subscribeForm = document.querySelector('#subscribeModal form');
+
+  var subscribeToast = new bootstrap.Toast(document.getElementById('subscribeToast'));
+
+  subscribeForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    myModal.hide();
+
+    subscribeToast.show();
   });
 });
 

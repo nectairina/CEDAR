@@ -96,22 +96,19 @@
         </div>
       </div>
 
-<div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <span class="position-absolute top-0 start-50 translate-middle p-2 badge rounded-pill text-bg-dark"> Don't miss out! </span>
-      <div class="modal-header">
-        <h5 class="modal-title" id="newsletterModalLabel"> Subscribe to our <i>newsletter</i></h5>
+
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content postal-modal">
+      <div class="modal-header border-0">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        Receive a 10% discount on your first purchase and get an exclusive preview into our product pipeline with weekly mails!
-        <form id="subscribeForm">
-          <div class="mb-3">
-            <label for="email" class="form-label email-label">E-mail adress</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <button type="submit" class="btn btn-primary" id="subscribeButton">Suscribirme</button>
+      <div class="modal-body text-center">
+        <h5 class="modal-title" id="subscribeModalLabel">¡Suscríbete a nuestra Newsletter!</h5>
+        <p>Recibe las últimas noticias y promociones exclusivas.</p>
+        <form>
+          <input type="email" class="form-control email-input mb-3" placeholder="Ingresa tu correo" required>
+          <button type="submit" class="btn btn-subscribe">Suscribirse</button>
         </form>
       </div>
     </div>

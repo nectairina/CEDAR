@@ -22,53 +22,55 @@
 --bs-offcanvas-width: 300px;
 }
 
-/* Estilo del fondo del modal */
-#newsletterModal {
-    background-color: rgba(0, 0, 0, 0.263); /* Fondo blanco semi-transparente */
-  }
-  
-  /* Estilo de la cabecera del modal */
-  #newsletterModal .modal-header {
-    background-color: rgb(255, 255, 255); 
-    color: rgb(0, 0, 0); 
-  }
-  
+.postal-modal {
+  background-image: url('../images/postcard.jpeg'); 
+  background-position: center;
+  color: #05361b; 
+  padding: 2rem;
+  border-radius: 10px;
+}
 
-  #newsletterModal .modal-title {
-    font-family: 'Helvetica', sans-serif; 
-    font-size: 1.5rem;
-  }
-  
-  #newsletterModal .modal-body {
-    text-align: center;
-    font-size: 1rem; 
-    color: #535252; 
-  }
-  
-  #newsletterModal .btn-close {
-    background-color: transparent; 
-    border: none; 
-  }
-  
-  #newsletterModal .form-label {
-    font-weight: bold; 
-    color: #6b6b6b; 
-  }
+.modal-body h5,
+.modal-body p {
+  margin-bottom: 1rem;
+}
 
-  /* Estilo del formulario */
-  #newsletterModal form {
-    margin-top: 10px; /* Espacio superior */
-  }
-  
-  /* Estilo del botón de suscripción */
-  #newsletterModal .btn-primary {
-    background-color: #184a24; /* Cambiar color de fondo */
-    border: none; /* Sin borde */
-  }
-  
-  #newsletterModal .btn-primary:hover {
-    background-color: #218838; /* Color al pasar el ratón */
-  }
+.btn-subscribe {
+  background-color: #33333300; 
+  color: #fff; 
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px; 
+  transition: background-color 0.3s;
+  font-size: 1rem; 
+  cursor: pointer;
+}
+
+.btn-subscribe:hover {
+  color: #125021; 
+}
+
+.form-control,
+.btn {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-control.email-input {
+  border: none;                
+  border-bottom: 1px solid #333; 
+  border-radius: 0;            
+  outline: none;               
+  box-shadow: none;            
+  padding-left: 0;             
+  color: #333;                 
+  background-color: transparent; 
+}
+
+.form-control.email-input:focus {
+  border-bottom: 1px solid #000; 
+  box-shadow: none;
+}
 
   #subscribeToast {
     z-index: 1055;
@@ -98,10 +100,10 @@
 
   .banner-logo {
     position: absolute;
-    top: 40%; /* Ajusta este valor para subir o bajar el logo */
+    top: 40%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120vh; /* Ajusta el tamaño del logo según necesites */
+    width: 120vh; 
     opacity: 0;
   }
   
