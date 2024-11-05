@@ -6,6 +6,21 @@
     background-color: white;
 }
 
+.fondo-inicio {
+    height: 700px;
+    width: 100%;
+    background-color: rgb(17, 49, 17);
+}
+
+.categorias-productos {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.texto-categorias {
+    color: white;
+}
+
 .unlock-regular {
     font-family: "Unlock", serif;
     font-weight: 400;
@@ -22,131 +37,35 @@
 --bs-offcanvas-width: 300px;
 }
 
-.postal-modal {
-  background-image: url('../images/postcard.jpeg'); 
-  background-position: center;
-  color: #05361b; 
-  padding: 2rem;
-  border-radius: 10px;
+.custom-container {
+    max-width: 1850px; 
+    margin: 0 auto; 
 }
-
-.modal-body h5,
-.modal-body p {
-  margin-bottom: 1rem;
+.custom-card-img {
+    height: 500px; 
+    object-fit: cover; 
 }
+.custom-row {
+    margin-left: -15px; 
+    margin-right: -15px; 
 
-.btn-subscribe {
-  background-color: #33333300; 
-  color: #fff; 
-  border: none;
-  border-radius: 0;
-  padding: 10px 20px; 
-  transition: background-color 0.3s;
-  font-size: 1rem; 
-  cursor: pointer;
 }
-
-.btn-subscribe:hover {
-  color: #125021; 
-}
-
-.form-control,
-.btn {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.form-control.email-input {
-  border: none;                
-  border-bottom: 1px solid #333; 
-  border-radius: 0;            
-  outline: none;               
-  box-shadow: none;            
-  padding-left: 0;             
-  color: #333;                 
-  background-color: transparent; 
-}
-
-.form-control.email-input:focus {
-  border-bottom: 1px solid #000; 
-  box-shadow: none;
-}
-
-  #subscribeToast {
-    z-index: 1055;
-  }
-
-
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    overflow: hidden;
-  }
-  
-  .banner-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-  }
-  
-  .banner-image.active {
-    opacity: 1;
-  }
-
-  .banner-logo {
-    position: absolute;
-    top: 40%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120vh; 
-    opacity: 0;
-  }
-  
-  .banner-logo.active {
-    opacity: 1;
-  }
-
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-img,
-.gallery-img-hover {
-
-    width: 100%;
-    height: 25vw;
-    object-fit: cover;
-}
-
-.gallery-img-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.image-container:hover .gallery-img {
-    opacity: 0;
-}
-
-.image-container:hover .gallery-img-hover {
-    opacity: 1;
-}
-
-.category-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 4vw;; 
+.card {
+    width: 460px; 
+    height: 650px; 
+    overflow: hidden; 
+    border: none; 
+    border-radius: 0; 
 }
 
 
+.card img {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}
+
+
+.card-group {
+    margin: 15px; 
+}
