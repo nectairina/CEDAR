@@ -237,3 +237,104 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+#about {
+  min-height: 100vh;
+  display: flex;
+}
+
+.about-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+}
+
+.text-column-about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #ffcc7b;
+}
+
+.title-about {
+  color:#fffbd9;
+  text-align: center;
+  margin-top:4rem;
+  margin-bottom: -2.5rem;
+  position: relative;
+  z-index: 3;
+}
+
+.about-img-2 {
+  position: relative;
+  width: 35%;
+  z-index: 2;
+}
+
+.text-about {
+  color:#fffbd9;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.new-in-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.new-in-track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+  min-width: 200%;
+}
+
+.new-in-item {
+  font-size: 3vw;
+  color: #05361b;
+  padding: 0 4rem;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.image-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.image-track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+  min-width: 200%;
+}
+
+.carousel-image {
+  height: 12vw;
+  padding: 0 2rem;
+}
