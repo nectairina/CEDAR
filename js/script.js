@@ -38,4 +38,4 @@ function changeImage() {
   logos[currentIndex].classList.add('active');
 }
 
-setInterval(changeImage, 3000);
+setInterval(changeImage, 1500);

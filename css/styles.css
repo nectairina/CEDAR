@@ -37,7 +37,7 @@
 
 .btn-subscribe {
   background-color: #33333300; 
-  color: #fff; 
+  color: #125021; 
   border: none;
   border-radius: 0;
   padding: 10px 20px; 
@@ -47,29 +47,30 @@
 }
 
 .btn-subscribe:hover {
-  color: #125021; 
+  color: #fff; 
 }
 
 .form-control,
-.btn {
+.btn-subscribe {
   width: 80%;
   margin: 0 auto;
 }
 
 .form-control.email-input {
   border: none;                
-  border-bottom: 1px solid #333; 
+  border-bottom: 2px solid #082209; 
   border-radius: 0;            
   outline: none;               
   box-shadow: none;            
   padding-left: 0;             
-  color: #333;                 
+  color: #3333331d;                 
   background-color: transparent; 
 }
 
 .form-control.email-input:focus {
-  border-bottom: 1px solid #000; 
+  border-bottom: 2px solid #333; 
   box-shadow: none;
+  color: #333; 
 }
 
   #subscribeToast {
@@ -191,4 +192,48 @@
 
 .card-group {
   margin: 15px; 
+}
+
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nav-link:hover {
+  color:#05361b;
+}
+
+.modal-title {
+  font-size: 2em;
+}
+
+.lugrasimo-regular {
+  font-family: "Lugrasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.novedades {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
