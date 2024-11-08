@@ -147,7 +147,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
-    font-size: 4vw;; 
+    font-size: 4vw; 
 }
 
 
@@ -303,7 +303,7 @@
 }
 
 .new-in-item {
-  font-size: 3vw;
+  font-size: 3rem;
   color: #05361b;
   padding: 0 4rem;
   white-space: nowrap;
