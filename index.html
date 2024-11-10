@@ -5,27 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cedar - Vintage Furniture</title>
     
+    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <!-- bs icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- nuestro css -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- google fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Monsieur+La+Doulaise&family=Parisienne&family=Unlock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:opsz@9..40&family=Lugrasimo&family=Unlock&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/jpg" href="images/favicon-cedar-20.png">
 
   </head>
 <body>
     <nav class="navbar sticky-top  navbar-expand-lg mi-color-fondo">
         <div class="container-fluid">
           <a class="navbar-brand unlock-regular cedar-nombre" href="#top">cedar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex align-items-center">
+          <a class="nav-link icon-link bi bi-person-vcard d-block d-lg-none me-2 mx-3" href="#" style="font-size:1.5rem;"></a>
+          <a class="nav-link icon-link bi bi-basket d-block d-lg-none me-2 mx-3" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-carrito" style="font-size:1.5rem;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
+        </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link arvo-regular" href="#">ABOUT US</a>
+                    <a class="nav-link arvo-regular" href="#about">ABOUT US</a>
                 </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle arvo-regular" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,28 +68,25 @@
                   <li><a class="dropdown-item arvo-regular-italic" href="#">Textile</a></li>
                 </ul>
               </li>
-            <li class="nav-item">
-                <a class="nav-link arvo-regular" href="#">BLOG</a>
-            </li>
+
             </ul>
             <ul>
               <div class="text-center">
-                <img src="c:\Users\Usuario\Documents\maquetación web\p1 cedar\boceto logo texto-03.png" class="position-absolute top-50 start-50 translate-middle img-fluid" width="90" height="60" alt="...">
+                <img src="images/logo-cedar.png" class="position-absolute top-50 start-50 translate-middle logo-cedar-banner cedar-banner img-fluid" width="35"  alt="logo cedar">
               </div>
               
             </ul>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link arvo-regular-italic"> SIGN IN </a>
+                <a class="nav-link arvo-regular" href="blog.html">BLOG</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link arvo-regular-italic sign-in-banner" href=""> SIGN IN </a>
               </li>
             </ul>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link icon-link basket" href="#offcanvasExample" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
-                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
-                  </svg>
-                </a>
+                <a class="nav-link icon-link bi bi-basket icono-cesta-2" width="18" height="18" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-carrito"></a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -85,20 +97,23 @@
         </div>
       </nav>
 
-    
-
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-carrito" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">YOUR CART</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <p> Items + imágenes </p>
-        </div>
-      </div>
+          <form action="employee-page" id="form-container">
+            <div id="form" class="dx-form dx-widget dx-visibility-change-handler" role="form"></div>
+            </div>
+          </form>
+      </div>  
 
+  
+      
 
-<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+  <div class="modal" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+  data-aos-duration="1300" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content postal-modal">
       <div class="modal-header border-0">
@@ -114,7 +129,8 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
+
 
 <div class="toast" id="subscribeToast" style="position: fixed; bottom: 20px; right: 20px; min-width: 250px;" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
@@ -128,20 +144,86 @@
 
 <div class="banner">
   <img src="images/fondo-textil-marron.jpg" class="banner-image active" alt="Imagen 1">
-  <img src="images/fondo-textil-verde.PNG" class="banner-image" alt="Imagen 2">
   <img src="images/fondo-textil-rojo.jpg" class="banner-image" alt="Imagen 3">
+  <img src="images/fondo-textil-verde.PNG" class="banner-image" alt="Imagen 2">
   <img src="images/fondo-textil-amarillo.jpg" class="banner-image" alt="Imagen 4">
 
   <img src="images/cedar-logo-banner-1.png" class="banner-logo img-fluid active" alt="Logo 1">
-  <img src="images/cedar-logo-banner-2.png" class="banner-logo img-fluid" alt="Logo 2">
   <img src="images/cedar-logo-banner-3.png" class="banner-logo img-fluid" alt="Logo 3">
-  <img src="images/cedar-logo-banner-4.png" class="banner-logo img-fluids" alt="Logo 4">
+  <img src="images/cedar-logo-banner-2.png" class="banner-logo img-fluid" alt="Logo 2">
+  <img src="images/cedar-logo-banner-4.png" class="banner-logo img-fluid" alt="Logo 4">
 </div>
 
 
-<div class="container-fluid">
-  <div class="novedades"> New in <!-- Hacer carrousel con muebles en png que se muevan constantemente y otro con las palabras 'new in' en sentido contrario --> </div>
+<div class="container-fondo-postcards d-none d-md-block">
+  <img src="images/00-fondo-inicio-postcards.jpg" class="fondo-postcards" alt="Fondo inicio postcards">
+  <div class="postcard postcard-1 d-none d-md-block">
+    <img src="images/00-postcard.png" alt="Postal 1" data-aos="zoom-out-right" data-aos-duration="1000">
+  </div>
+  <div class="postcard postcard-2 d-none d-md-block">
+    <img src="images/01-postcard.png" alt="Postal 2" data-aos="zoom-out-left" data-aos-duration="1000">
+  </div>
+  <div class="postcard postcard-3 d-none d-md-block">
+    <img src="images/02-postcard.png" alt="Postal 3" data-aos="zoom-in-up" data-aos-duration="1000">
+  </div>
+  <div class="postcard postcard-4 d-none d-md-block">
+    <img src="images/03-postcard.png" alt="Postal 4" data-aos="zoom-in-down" data-aos-duration="1000">
+  </div>
 </div>
+
+<div class="container-postcards-movil d-md-none d-block">
+  <img src="images/00-fondo-inicio-postcards.jpg" class="fondo-postcards" alt="Fondo inicio postcards">
+<div class="postcard-movil postcard-movil-1 d-md-none d-block">
+  <img src="images/00-postcard.png" alt="Postal 1" data-aos="zoom-out-right" data-aos-duration="1000">
+</div>
+<div class="postcard-movil postcard-movil-2 d-md-none d-block">
+  <img src="images/01-postcard.png" alt="Postal 2" data-aos="zoom-out-left" data-aos-duration="1000">
+</div>
+<div class="postcard-movil postcard-movil-3 d-md-none d-block">
+  <img src="images/02-postcard.png" alt="Postal 3" data-aos="zoom-in-up" data-aos-duration="1000">
+</div>
+<div class="postcard-movil postcard-movil-4 d-md-none d-block">
+  <img src="images/03-postcard.png" alt="Postal 4" data-aos="zoom-in-down" data-aos-duration="1000">
+</div>
+</div>
+
+<div class="new-in-carousel">
+  <div class="new-in-track">
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+    <span class="new-in-item dm-sans-regular">New arrivals</span>
+    <span class="new-in-item dm-sans-italic">New arrivals</span>
+  </div>
+</div>
+
+<div class="image-carousel">
+  <div class="image-track">
+    <img src="images/01-new-in.PNG" class="carousel-image" alt="Imagen 1">
+    <img src="images/02-new-in.jpg" class="carousel-image" alt="Imagen 2">
+    <img src="images/03-new-in.jpg" class="carousel-image" alt="Imagen 3">
+    <img src="images/04-new-in.jpg" class="carousel-image" alt="Imagen 4">
+    <img src="images/05-new-in.jpg" class="carousel-image" alt="Imagen 1">
+    <img src="images/06-new-in.PNG" class="carousel-image" alt="Imagen 2">
+    <img src="images/07-new-in.jpg" class="carousel-image" alt="Imagen 1">
+    <img src="images/08-new-in.jpg" class="carousel-image" alt="Imagen 2">
+    <img src="images/09-new-in.jpg" class="carousel-image" alt="Imagen 3">
+    <img src="images/10-new-in.PNG" class="carousel-image" alt="Imagen 4">
+    <img src="images/11-new-in.jpeg" class="carousel-image" alt="Imagen 1">
+    <img src="images/12-new-in.jpg" class="carousel-image" alt="Imagen 2">
+    
+  </div>
+</div>
+
      
       <div class="container-fluid p-0">
         <div class="row g-0">
@@ -149,7 +231,7 @@
               <a href="products.html">
                 <div class="image-container">
                   <img src="images/00-chair.PNG" class="gallery-img" alt="Chairs">
-                  <img src="images/01-chair.PNG" class="gallery-img-hover" alt="Chairs Grayscale">
+                  <img src="images/01-chair.PNG" class="gallery-img-hover" alt="Chairs">
                 </div>
                 <div class="category-text lugrasimo-regular">Chairs</div>
               </a>
@@ -158,7 +240,7 @@
               <a href="products.html">
                 <div class="image-container">
                     <img src="images/00-mesa.jpg" class="gallery-img" alt="Tables">
-                    <img src="images/01-mesa.jpg" class="gallery-img-hover" alt="Tables Close up">
+                    <img src="images/01-mesa.jpg" class="gallery-img-hover" alt="Tables">
                 </div>
                 <div class="category-text lugrasimo-regular">Tables</div>
               </a>
@@ -167,7 +249,7 @@
               <a href="products.html">
                 <div class="image-container">
                     <img src="images/00-shelving.PNG" class="gallery-img" alt="Shelving">
-                    <img src="images/01-shelving.PNG" class="gallery-img-hover" alt="Shelving Grayscale">
+                    <img src="images/01-shelving.PNG" class="gallery-img-hover" alt="Shelving">
                 </div>
                 <div class="category-text lugrasimo-regular">Shelving</div>
               </a>
@@ -176,7 +258,7 @@
               <a href="products.html">
                 <div class="image-container">
                     <img src="images/00-light.PNG" class="gallery-img" alt="Lights">
-                    <img src="images/01-light.PNG" class="gallery-img-hover" alt="Lights Grayscale">
+                    <img src="images/01-light.PNG" class="gallery-img-hover" alt="Lights">
                 </div>
                 <div class="category-text lugrasimo-regular">Lights</div>
               </a>
@@ -185,7 +267,7 @@
               <a href="products.html">
                 <div class="image-container">
                     <img src="images/00-decor.PNG" class="gallery-img" alt="Decor">
-                    <img src="images/01-decor.PNG" class="gallery-img-hover" alt="Decor Grayscale">
+                    <img src="images/01-decor.PNG" class="gallery-img-hover" alt="Decor">
                 </div>
                 <div class="category-text lugrasimo-regular">Decor</div>
               </a>
@@ -194,7 +276,7 @@
               <a href="products.html">
                 <div class="image-container">
                     <img src="images/00-textil.PNG" class="gallery-img" alt="Textile">
-                    <img src="images/01-textil.PNG" class="gallery-img-hover" alt="Textile Grayscale">
+                    <img src="images/01-textil.PNG" class="gallery-img-hover" alt="Textile">
                 </div>
                 <div class="category-text lugrasimo-regular">Textile</div>
               </a>
@@ -203,8 +285,57 @@
     </div>
 
 
+    <div class="container-fluid" id="about" style="background-color: #28170a;">
+      <div class="row no-gutters align-items-center">
+        <div class="col-lg-6 col-12 order-lg-1 order-2 p-0">
+          <img src="images/00-about.PNG" class="img-fluid w-100 h-100" style="object-fit: cover; height: 100vh;" alt="Salón vintage">
+        </div>
+        <div class="col-lg-6 col-12 order-lg-2 order-1 d-flex flex-column justify-content-center align-items-center text-center text-white p-5">
+          <div class="title-about" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <h2 class="lugrasimo-regular">In touch with nature,</h2>
+            <h2 class="lugrasimo-regular">in touch with our past</h2>
+          </div>
+          <div class="about-img-2 my-3">
+            <img src="images/01-about.PNG" class="img-fluid rounded" alt="Picnic">
+          </div>
+          <p class="text-about px-3">
+            We believe in giving new life to furniture with a history. We are passionate about finding and restoring unique pieces that add warmth and character to every home. We connect design and vintage lovers through a community committed to sustainability and the beauty of the authentic.
+          </p>
+          <a href="blog.html" class="link mt-3 dm-sans-bold" style="color: #ffcc7b;">Read more</a>
+        </div>
+    
+      </div>
+    </div>
+
+
+  
+    <div class="container-fluid text-center align-items-center p-4" style="background-image:url('images/fondo-textil-azul.jpg');background-position:center;color:#fff;">
+      <div class="row">
+        <div class="col-md-4 col-12 my-3">
+          <i class="bi bi-tree" style="font-size: 6rem"></i>
+          <h3 class="subtitle-iconos-about dm-sans-bold mx-3"> All our woods, fabrics and materials come from quality sustainable sources </h3>
+        </div>
+        <div class="col-md-4 col-12 my-3">
+          <i class="bi bi-recycle" style="font-size: 6rem"></i>
+          <h3 class="subtitle-iconos-about dm-sans-bold mx-3"> We recycle existing materials and give furniture a new life and home </h3>
+        </div>
+        <div class="col-md-4 col-12  my-3">
+          <i class="bi bi-house-heart" style="font-size: 6rem"></i>
+          <h3 class="subtitle-iconos-about dm-sans-bold mx-3"> 25+ years of tradition, craftsmanship and dedication </h3>
+        </div>
+      </div>
+    </div>
+    
+    
+
        <!-- JAVASCRIPT BOOTSTRAP -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- AOS JS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 
      <!-- MY JAVASCRIPT -->
      <script src="js/script.js"></script>

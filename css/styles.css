@@ -1,9 +1,17 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', Helvetica, sans-serif;
 }
 
 .mi-color-fondo {
     background-color: white;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
 }
 
 .unlock-regular {
@@ -18,15 +26,10 @@
     font-size: 1.5em;
 }
 
-.offcanvas {
---bs-offcanvas-width: 300px;
-}
-
 .postal-modal {
   background-image: url('../images/postcard.jpeg'); 
   background-position: center;
   color: #05361b; 
-  padding: 2rem;
   border-radius: 10px;
 }
 
@@ -147,428 +150,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
-    font-size: 4vw;; 
+    font-size: 4rem; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -760,8 +343,10 @@
   font-style: normal;
 }
 
-
-
+.novedades {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
  /* Foto grande productos, titulo chair, circulos de los muebles de la foto */
 
@@ -1195,5 +780,299 @@
 @media (max-width: 992px) {
   .embed-responsive-item {
     width:100vw;
+  }
+}
+
+#about {
+  min-height: 100vh;
+  display: flex;
+}
+
+.about-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+}
+
+.text-column-about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #ffcc7b;
+}
+
+.title-about {
+  color:#fffbd9;
+  text-align: center;
+  margin-top:4rem;
+  margin-bottom: -2.5rem;
+  position: relative;
+  z-index: 3;
+}
+
+.about-img-2 {
+  position: relative;
+  width: 35%;
+  z-index: 2;
+}
+
+.text-about {
+  color:#fffbd9;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.new-in-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #ffffff;
+  padding: 1rem 0;
+}
+
+.new-in-track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+  min-width: 200%;
+}
+
+.new-in-item {
+  font-size: 3rem;
+  color: #05361b;
+  padding: 0 4rem;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.image-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.image-track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+  min-width: 200%;
+}
+
+.carousel-image {
+  height: 12rem;
+  padding: 0 2rem;
+}
+
+.carrito-movil {
+  display: flex;
+  align-items: center;
+  padding:4px;
+}
+
+
+.dm-sans-regular {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-italic {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-sans-bold {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.container-fondo-postcards {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.fondo-postcards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postcard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+}
+
+.postcard img {
+  width: 30vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.postcard-1 {
+  top: 43%;
+  left: 20%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  z-index: 4;
+}
+
+.postcard-2 {
+  top: 57%;
+  left: 78%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  z-index: 2;
+}
+
+.postcard-3 {
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  z-index: 3;
+}
+
+.postcard-4 {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(4deg);
+  z-index: 1;
+}
+
+.container-postcards-movil {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.postcard-movil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+}
+
+.postcard-movil img {
+  width: 65vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.postcard-movil-1 {
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  z-index: 4; 
+}
+
+.postcard-movil-2 {
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(10deg); 
+  z-index: 3;
+}
+
+.postcard-movil-3 {
+  top: 75%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  z-index: 2;
+}
+
+.postcard-movil-4 {
+  top: 35%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(3deg);
+  z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+  .image-track {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+    min-width: 200%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .category-text {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-text {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .subtitle-iconos-about {
+      font-size: 1rem;
+  }
+}
+
+.subtitle-iconos-about {
+  font-size:1.5rem;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .subtitle-iconos-about {
+      font-size: 2rem;
+  }
+}
+
+.navbar-toggler {
+  border:0;
+}
+
+@media (max-width: 992px) {
+  .cedar-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-in-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .icono-cesta-2 {
+      display:none;
   }
 }
