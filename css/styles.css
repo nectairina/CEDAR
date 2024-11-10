@@ -919,18 +919,18 @@
 
 @media (max-width: 992px) {
   .subtitle-iconos-about {
-      font-size: 1rem;
+      font-size: 0.75rem;
   }
 }
 
 .subtitle-iconos-about {
-  font-size:1.5rem;
+  font-size:1rem;
   padding-bottom: 0px;
 }
 
 @media (max-width: 768px) {
   .subtitle-iconos-about {
-      font-size: 2rem;
+      font-size: 1rem;
   }
 }
 
