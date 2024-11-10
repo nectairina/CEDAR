@@ -167,3 +167,41 @@ function openCarousel(index) {
   const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
   carouselInstance.to(index);
 }
+
+$(document).ready(function() {
+  const authModal = new bootstrap.Modal(document.getElementById('sign-in-modal'));
+  const authToast = new bootstrap.Toast(document.getElementById('sign-toast'));
+
+  $("#sign-in-trigger").click(function(event) {
+    event.preventDefault();
+    authModal.show();
+  });
+
+  $("#to-sign-up").click(function() {
+    $("#sign-in-form").hide();
+    $("#sign-up-form").show();
+    $("#sign-in-modalLabel").text("Sign Up");
+  });
+
+  $("#to-sign-in").click(function() {
+    $("#sign-up-form").hide();
+    $("#sign-in-form").show();
+    $("#sign-in-modalLabel").text("Sign In");
+  });
+
+  $("#sign-in-form form").submit(function(event) {
+    event.preventDefault();
+    authModal.hide();
+    $("#toast-title").text("Welcome!");
+    $("#toast-message").text("You have signed in successfully.");
+    authToast.show();
+  });
+
+  $("#sign-up-form form").submit(function(event) {
+    event.preventDefault();
+    authModal.hide();
+    $("#toast-title").text("Account Created!");
+    $("#toast-message").text("Your account has been created successfully.");
+    authToast.show();
+  });
+});
