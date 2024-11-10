@@ -6,6 +6,14 @@
     background-color: white;
 }
 
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+}
+
 .unlock-regular {
     font-family: "Unlock", serif;
     font-weight: 400;
@@ -18,15 +26,10 @@
     font-size: 1.5em;
 }
 
-.offcanvas {
---bs-offcanvas-width: 300px;
-}
-
 .postal-modal {
   background-image: url('../images/postcard.jpeg'); 
   background-position: center;
   color: #05361b; 
-  padding: 2rem;
   border-radius: 10px;
 }
 
@@ -147,7 +150,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
-    font-size: 4vw; 
+    font-size: 4rem; 
 }
 
 
@@ -333,13 +336,14 @@
 }
 
 .carousel-image {
-  height: 12vw;
+  height: 12rem;
   padding: 0 2rem;
 }
 
 .carrito-movil {
   display: flex;
   align-items: center;
+  padding:4px;
 }
 
 
@@ -466,4 +470,65 @@
   left: 60%;
   transform: translate(-50%, -50%) rotate(3deg);
   z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+  .image-track {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+    min-width: 200%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .category-text {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-text {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .subtitle-iconos-about {
+      font-size: 1rem;
+  }
+}
+
+.subtitle-iconos-about {
+  font-size:1.5rem;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .subtitle-iconos-about {
+      font-size: 2rem;
+  }
+}
+
+.navbar-toggler {
+  border:0;
+}
+
+@media (max-width: 992px) {
+  .cedar-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-in-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .icono-cesta-2 {
+      display:none;
+  }
 }
