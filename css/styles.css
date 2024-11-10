@@ -6,6 +6,14 @@
     background-color: white;
 }
 
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+}
+
 .unlock-regular {
     font-family: "Unlock", serif;
     font-weight: 400;
@@ -18,15 +26,10 @@
     font-size: 1.5em;
 }
 
-.offcanvas {
---bs-offcanvas-width: 300px;
-}
-
 .postal-modal {
   background-image: url('../images/postcard.jpeg'); 
   background-position: center;
   color: #05361b; 
-  padding: 2rem;
   border-radius: 10px;
 }
 
@@ -147,7 +150,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
-    font-size: 4vw; 
+    font-size: 4rem; 
 }
 
 
@@ -333,13 +336,14 @@
 }
 
 .carousel-image {
-  height: 12vw;
+  height: 12rem;
   padding: 0 2rem;
 }
 
 .carrito-movil {
   display: flex;
   align-items: center;
+  padding:4px;
 }
 
 
@@ -466,4 +470,136 @@
   left: 60%;
   transform: translate(-50%, -50%) rotate(3deg);
   z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+  .image-track {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+    min-width: 200%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .category-text {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-text {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .subtitle-iconos-about {
+      font-size: 1rem;
+  }
+}
+
+.subtitle-iconos-about {
+  font-size:1.5rem;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .subtitle-iconos-about {
+      font-size: 2rem;
+  }
+}
+
+.navbar-toggler {
+  border:0;
+}
+
+@media (max-width: 992px) {
+  .cedar-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sign-in-banner {
+      display:none;
+  }
+}
+
+@media (max-width: 992px) {
+  .icono-cesta-2 {
+      display:none;
+  }
+}
+
+
+.login-form input[type=submit] {
+  float: right;
+  cursor: pointer;
+}
+
+.js .login-form input[type=checkbox] {
+  position: fixed;
+  left: -9999px;
+}
+
+.login-form span {
+  position: relative;
+  margin-top: 15px;
+  float: left;
+}
+
+.js .login-form span {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.js .login-form span.checked:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+}
+---------------
+.blog-container {
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card-body {
+  padding: 1rem;
+}
+
+.blog-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card-subtitle {
+  font-size: 1rem;
+  color: #666;
 }
