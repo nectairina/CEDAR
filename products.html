@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Monsieur+La+Doulaise&family=Parisienne&family=Unlock&display=swap" rel="stylesheet">
+
+   
+
+
+
 </head>
 <body>
     <nav class="navbar sticky-top  navbar-expand-lg mi-color-fondo">
@@ -96,50 +101,96 @@
 
     
       <div class="custom-container mt-4">
-        <h1 class="text-center mb-4 lugrasimo-regular">Chairs</h1>
+        <div class="image-with-title-container">
+            <h1 class="text-center lugrasimo-regular chairs-title">Chairs</h1>
+    
+            <div class="large-image-container">
+                <img src="https://149868225.v2.pressablecdn.com/wp-content/uploads/2023/07/yubinm_this_mid_century_living_room_has_wooden_walls_and_a_larg_f9764496-ec66-4f1d-b597-c991aa4ae993.webp" alt="Imagen destacada debajo de Chairs" class="large-image">
+                <div class="mueble-circle" style="top: 62%; left: 43%;"></div>
+                <div class="mueble-text" style="top: 63%; left: 43%;">Silla de diseño moderno</div>
+                <div class="mueble-circle" style="top: 65%; left: 67%;"></div>
+                <div class="mueble-text" style="top: 66%; left: 67%;">Mesa de centro</div>
+                <div class="mueble-circle" style="top: 70%; left: 25%;"></div>
+                <div class="mueble-text" style="top: 71%; left: 25%;">Sofá elegante</div>
+            </div>
+        </div>
 
+        <div class="container-fluid display-flex my-4">
+            <button type="button" class="btn btn-action-all p-2">All</button>
+            <button type="button" class="btn btn-action-stool p-2">Stool</button>
+            <button type="button" class="btn btn-action-design p-2">Design chairs</button>
+            <button type="button" class="btn btn-action-armchair p-2">Armchair</button>
+            <button type="button" class="btn btn-action-newelement p-2">New elements</button>
+            <button type="button" class="btn btn-action-lastoffer p-2">Last offer</button>
+        </div>
+        
+        
+    <div class="container-fluid p-3">
         <!-- Fila 1 -->
-        <div class="row row-cols-1 row-cols-md-4 g-3 mb-4 custom-row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 ">
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteBinsa_0003_Rellenogenerativo5_720x.jpg?v=1706086046"/>
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                         <img src="images/00-taburete-1.PNG" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-taburete-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble de Almacenamiento</strong>
-                            <em>400$</em>
+                        <div class="card-content">
+                            <strong class="product-name">stool</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Silla de Comedor" />
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                         <img src="images/00-silla-2.png" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-silla-2.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Silla de Comedor</strong>
-                            <em>90$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design Chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Mesa Lateral" />
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                         <img src="images/00-silla-7.png" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-silla-7.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mesa Lateral</strong>
-                            <em>130$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Mesa de Comedor" />
+            <div class="col d-block d-xl-none">
+                <div class="card armchair">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                        <img src="images/00-sillon-3.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-sillon-3.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mesa de Comedor</strong>
-                            <em>600$</em>
+                        <div class="card-content">
+                            <strong class="product-name">armchair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
@@ -147,47 +198,70 @@
         </div>
 
         <!-- Fila 2 -->
-        <div class="row row-cols-1 row-cols-md-4 g-3 mb-4 custom-row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 ">
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Silla de Oficina" />
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                        <img src="images/00-silla-1.png" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-silla-1.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Silla de Oficina</strong>
-                            <em>150$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Sofa Moderno" />
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                        <img src="images/00-taburete-4.PNG">
+                        <img src="images/01-taburete-4.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Sofa Moderno</strong>
-                            <em>1200$</em>
+                        <div class="card-content">
+                            <strong class="product-name">stool</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Mesa de Centro" />
+                <div class="card armchair">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                        <img src="images/00-sillon-4.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-sillon-4.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>    
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mesa de Centro</strong>
-                            <em>250$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Armchair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Estantería" />
+            <div class="col d-block d-xl-none">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                        <img src="images/00-silla-3.png" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-silla-3.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Estantería</strong>
-                            <em>400$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
@@ -195,47 +269,71 @@
         </div>
 
         <!-- Fila 3 -->
-        <div class="row row-cols-1 row-cols-md-4 g-3 mb-4 custom-row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 ">
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Mueble de Televisión" />
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                        <img src="images/00-taburete-2.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-taburete-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble de Televisión</strong>
-                            <em>700$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Stool</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://northdeco.com/cdn/shop/files/TabureteDebbie_0003_Rellenogenerativo6_720x.jpg?v=1708603310" class="custom-card-img" alt="Silla de Diseño" />
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                        <img src="images/00-silla-4.png" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-silla-4.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Silla de Diseño</strong>
-                            <em>300$</em>
+                        <div class="card-content">
+                            <strong class="product-name">silla diseño</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1519710164239-3b1a68b44c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDM0M3x8bWluZGVyJTIwcGFyaWV0ZXxlbnwwfHx8fDE2NTQ1Njg4Mjg&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mueble Multifuncional" />
+                <div class="card armchair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                        <img src="images/00-sillon-1.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-sillon-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble Multifuncional</strong>
-                            <em>500$</em>
+                        <div class="card-content">
+                            <strong class="product-name">armchair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1564802006410-8c640ee4c8fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDI5M3x8Y29sb3VtbnxlbnwwfHx8fDE2NTQ1Njg4MzI&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mesa Auxiliar" />
+            <div class="col d-block d-xl-none">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                        <img src="images/00-silla-5.png" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-silla-5.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mesa Auxiliar</strong>
-                            <em>200$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design Chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
@@ -243,112 +341,78 @@
         </div>
 
         <!-- Fila 4 -->
-        <div class="row row-cols-1 row-cols-md-4 g-3 mb-4 custom-row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-3 ">
             <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1602512021868-15f3f0d0fba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDE4MnwxMjg0NzZ8ZW58MHx8fHwxNjU0NTY4ODM2&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mueble de Jardín" />
+                <div class="card armchair">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                        <img src="images/00-sillon-5.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-sillon-5.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble de Jardín</strong>
-                            <em>450$</em>
+                        <div class="card-content">
+                            <strong class="product-name">armchair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1604696999318-4c3f0f0a06f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDk5fHxvZmZpY2V8ZW58MHx8fHwxNjU0NTY4ODQw&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Taburete de Bar" />
+                <div class="card armchair">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                        <img src="images/00-sillon-2.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-sillon-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Taburete de Bar</strong>
-                            <em>80$</em>
+                        <div class="card-content">
+                            <strong class="product-name">armchair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1581574974970-4e7c10f370ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDAxOXx8Y2hhbGxlbmdlJTIwY2hhbGxlbnxlbnwwfHx8fDE2NTQ1Njg4NDA&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Chaise Longue" />
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                        <img src="images/00-taburete-3.PNG" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-taburete-3.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Chaise Longue</strong>
-                            <em>750$</em>
+                        <div class="card-content">
+                            <strong class="product-name">stool</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1589152279658-b7b8b4f38e74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDE4N3x8Y2hhbGxlbmdlJTIwc2FuZHN8ZW58MHx8fHwxNjU0NTY4ODUw&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Sofá Cama" />
+            <div class="col d-block d-xl-none">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                        <img src="images/00-silla-6.png" class="image-default-card" alt="Imagen principal">
+                        <img src="images/01-silla-6.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Sofá Cama</strong>
-                            <em>900$</em>
+                        <div class="card-content">
+                            <strong class="product-name">Design Chair</strong>
+                            <em class="product-price">400$</em>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+       
 
-        <!-- Fila 5 -->
-        <div class="row row-cols-1 row-cols-md-4 g-3 mb-4 custom-row">
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1584844406797-f9de76604fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDg2fHx0YWJsZXxlbnwwfHx8fDE2NTQ1Njg4NzY&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mesa de Comedor Ovalada" />
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mesa de Comedor Ovalada</strong>
-                            <em>700$</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1557834273-06c610401a65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDM0Mnx8cGFybGF8ZW58MHx8fHwxNjU0NTY4ODgw&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mueble Bar" />
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble Bar</strong>
-                            <em>950$</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1555117710-e08d2cfc78f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDU0fHx0YWJsZXxlbnwwfHx8fDE2NTQ1Njg4OTE&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Silla Tapizada" />
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Silla Tapizada</strong>
-                            <em>400$</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1587435175858-d62ae4e0c1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MlwwfDF8c2VhcmNofDEwMjR8fG1pbmR8ZW58MHx8fHwxNjU0NTY4OTIw&ixlib=rb-1.2.1&q=80&w=400" class="custom-card-img" alt="Mueble de Estudio" />
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <strong>Mueble de Estudio</strong>
-                            <em>500$</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-      <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
-        <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="...">
-          <strong class="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-      </div>
+      
 
        <!-- JAVASCRIPT BOOTSTRAP -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -356,4 +420,7 @@
      <!-- MY JAVASCRIPT -->
      <script src="js/script.js"></script>
 </body>
+
+
+ 
 </html>

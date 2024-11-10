@@ -162,6 +162,421 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Cards */
+
 .custom-container {
   max-width: 1850px; 
   margin: 0 auto; 
@@ -169,19 +584,93 @@
 
 .custom-card-img {
   height: 500px; 
-  object-fit: cover; 
-}
-.custom-row {
-  margin-left: -15px; 
-  margin-right: -15px; 
+  object-fit: contain; 
 }
 
 .card {
-  width: 460px; 
+  flex: 1 1 calc(33% - 15px);  
   height: 650px; 
-  overflow: hidden; 
-  border: none; 
-  border-radius: 0; 
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; 
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 100%; 
+  }
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0 0px; 
+  align-items: center;
+  height: 60px; 
+}
+
+.product-name {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+
+.product-price {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: right;
+}
+
+.image-container-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600vh;
+}
+
+.image-container-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, opacity 0.6s ease;
+}
+
+.image-default-card {
+  z-index: 1;
+}
+
+.image-hover-card {
+  transform: translateX(100%);
+  z-index: 2;
+  opacity: 0;
+}
+
+.card:hover .image-hover-card {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.card:hover .image-default-card {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.card .image-default-card {
+  transition: transform 0.3s ease, opacity 0.6s ease; 
 }
 
 .card img {
@@ -194,6 +683,44 @@
   margin: 15px; 
 }
 
+.hidden {
+  display: none; 
+}
+
+.badge-new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #125021; 
+  color: #fff; 
+  padding: 5px 10px;
+  border-radius: 15px; 
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.badge-offer {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  background-color: #ff6f00; 
+  color: #fff; 
+  padding: 5px 10px;
+  border-radius: 15px; 
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 3; 
+}
+
+.novedades {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+ /* Fuentes */
 
 .arvo-regular {
   font-family: "Arvo", serif;
@@ -233,7 +760,440 @@
   font-style: normal;
 }
 
-.novedades {
-  margin-top: 50px;
-  margin-bottom: 50px;
+
+
+
+ /* Foto grande productos, titulo chair, circulos de los muebles de la foto */
+
+.chairs-title {
+  position: absolute;
+  top: 100px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 14rem;  
+  color: #f5f5dc; 
+  font-weight: bold;
+  z-index: 10;  
+  
+}
+
+@media (max-width: 992px) {
+  .chairs-title {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chairs-title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .chairs-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mueble-circle {
+    display:none;
+  }
+}
+
+.large-image-container {
+  max-width: 1850px; 
+   
+  padding: 0 15px; 
+  position:relative;
+}
+
+.image-with-title-container {
+  position: relative;
+}
+
+.large-image {
+  width: 100%; 
+  height: 750px; 
+  border-radius: 8px; 
+  object-fit: cover;
+}
+
+
+.mueble-circle {
+  position: absolute;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 15px; 
+  height: 15px;
+  transition: background-color 0.3s ease; 
+}
+
+.mueble-circle:hover {
+  background-color: white; 
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: 0.3s ease-in;
+}
+
+.mueble-text {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateX(10px) translateY(-50%);
+  font-size: 1.2rem;
+  color: white;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
+  pointer-events: none; 
+}
+
+.mueble-circle:hover + .mueble-text {
+  transform: translateX(37px) translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Botones */
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+  margin-bottom: 30px; 
+  align-items: center; 
+}
+
+.btn-action-newelement {
+  background-color: #ffffff; 
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+}
+
+.btn-action-newelement:hover {
+  background-color: #125021; 
+  color: white; 
+}
+
+.btn-action-newelement:focus {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-lastoffer {
+  background-color: #ffffff; 
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+.btn-action-lastoffer:hover {
+  background-color: #ff6f00;
+  color: white; 
+}
+
+.btn-action-lastoffer:focus {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-all {
+  background-color: #ffffff;
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+}
+
+.btn-action-all:hover {
+  background-color: black; 
+  color: white; 
+}
+.btn-action-all:focus {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-stool {
+  background-color: #ffffff; 
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+}
+
+.btn-action-stool:hover {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-stool:focus {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-design {
+  background-color: #ffffff; 
+  color: black; 
+  border-radius: 10px;
+  padding: 5px 10px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+}
+
+.btn-action-design:hover {
+  background-color: black;
+  color: white; 
+}
+.btn-action-design:focus {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-armchair {
+  background-color: #ffffff; 
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; 
+}
+
+.btn-action-armchair:hover {
+  background-color: black; 
+  color: white; 
+}
+
+.btn-action-armchair:focus {
+  background-color: black; 
+  color: white; 
+}
+
+
+
+/* Footer */
+
+.footer-container {
+  width: 100vw; 
+  height: 300px; 
+  background-image: url(../images/fondo-footer.png); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  margin: 0; 
+  padding: 30px; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  color: white;
+  padding-left: 40px; 
+}
+
+
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin: 0; 
+}
+
+.footer-title {
+  font-size: 1.4rem; 
+  font-weight: bold;
+  margin-bottom: 2px; 
+}
+
+.footer-block p {
+  margin: 0;
+  font-size: 1rem; 
+  transition: color 0.3s, cursor 0.3s; 
+}
+
+
+.footer-block p:hover {
+  cursor: pointer; 
+  color: #ddd; 
+}
+
+
+.custom-footer-subscribe {
+  margin-left: auto; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 250px;
+}
+
+.custom-footer-subscribe-title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.custom-footer-subscribe-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+
+.custom-footer-subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.custom-footer-subscribe-input {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  width: 160px;
+  margin-right: 8px;
+}
+
+.custom-footer-subscribe-input::placeholder {
+  color: white; 
+}
+
+.custom-footer-subscribe-button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+.footer-container .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.custom-validation-message {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.custom-validation-message.valid {
+  background-color: #28a74688;
+  
+}
+
+.custom-validation-message.invalid {
+  background-color: #dc354676; 
+}
+
+.custom-validation-message.fade-out {
+  opacity: 0;
+}
+
+
+
+
+ /* Web item */
+
+.columna-img-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.img-item {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+   
+}
+
+
+.columna-texto-item {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.titulo-item {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.descripcion-item {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+
+.precio-item {
+  font-size: 1.5rem;
+  color: #5555557d;
+  margin-top: 10px;
+}
+
+
+.boton-item {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-item:hover {
+  background-color: #333;
+}
+
+
+@media (max-width: 992px) {
+  .embed-responsive-item {
+    width:100vw;
+  }
 }
