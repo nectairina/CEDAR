@@ -89,74 +89,78 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link icon-link bi bi-basket icono-cesta-2" width="18" height="18" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-carrito"></a>
-            </li>
-        </ul>
-        
-       
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search"  aria-label="Search">
-          <button type="button" class="btn btn-outline-dark"> Search </button>
-        </form>
-      </div>
-    </div>
-  </nav>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search"  aria-label="Search">
+              <button type="button" class="btn btn-outline-dark"> Search </button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-      <div class="modal fade" id="sign-in-modal" tabindex="-1" aria-labelledby="sign-in-modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" id="modal-body-sign-in">
-            <div class="modal-header" style="background-color: #20451c94;color:#fff">
-              <h5 class="modal-title arvo-regular-italic" id="sign-in-modalLabel">Sign In</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div id="sign-in-form">
-                <form>
-                  <div class="mb-3">
-                    <label for="signInEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="signInEmail" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="signInPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="signInPassword" required>
-                  </div>
-                  <button type="submit" class="btn btn-sign-in w-100">Sign In</button>
-                </form>
-                <p class="text-center mt-3">Don't have an account? <span class="toggle-link" id="to-sign-up">Sign Up</span></p>
-              </div>
-              <div id="sign-up-form" style="display:none;">
-                <form>
-                  <div class="mb-3">
-                    <label for="signUpUsername" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="signUpUsername" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="signUpEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="signUpEmail" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="signUpPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="signUpPassword" required>
-                  </div>
-                  <button type="submit" class="btn btn-sign-in w-100">Sign Up</button>
-                </form>
-                <p class="text-center mt-3">Already have an account? <span class="toggle-link" id="to-sign-in">Sign In</span></p>
-              </div>
-            </div>
-          </div>
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-carrito" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">YOUR CART</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </div>            
-        
-      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div id="sign-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <strong class="me-auto" id="toast-title">Success</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="offcanvas-body">
+          <div class="container text-center">
+            <div class="row p-3 align-items-center">
+              <div class="col">
+                <a href="item.html"><img src="images/00-silla-1.png" class="img-fluid rounded" alt="Ivy chair"></a>
+              </div>
+              <div class="col">
+                <b> Ivy </b>
+              </div>
+              <div class="col">
+                109$
+              </div>
+            </div>
+            <div class="row p-3 align-items-center">
+              <div class="col">
+                <a href="item.html"><img src="images/00-silla-2.png" class="img-fluid rounded" alt="Willow chair"></a>
+              </div>
+              <div class="col">
+                <b> Willow </b>
+              </div>
+              <div class="col">
+                145$
+              </div>
+            </div>
+            <div class="row p-3 align-items-center">
+              <div class="col">
+                <a href="item.html"><img src="images/00-silla-7.png" class="img-fluid rounded" alt="Aloe chair"></a>
+              </div>
+              <div class="col">
+                <b> Aloe </b>
+              </div>
+              <div class="col">
+                149$
+              </div>
+            </div>
+            <div class="row p-3">
+              <div class="col">
+                <p class="arvo-regular" style="text-align:left;"> TOTAL </p>
+              </div>
+              <div class="col">
+                
+              </div>
+              <div class="col">
+                <b>270$</b>
+              </div>
+            </div>
           </div>
-          <div class="toast-body" id="toast-message">
-            Your account has been created successfully!
+
+          <div class="p-3 border-top">
+            <div class="d-grid">
+              <button class="btn btn-dark" type="button">CHECKOUT</button>
+            </div>
           </div>
         </div>
       </div>
+
+  
       
 
   <div class="modal" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -176,6 +180,62 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="sign-in-modal" tabindex="-1" aria-labelledby="sign-in-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="modal-body-sign-in">
+        <div class="modal-header" style="background-color: #20451c94;color:#fff">
+          <h5 class="modal-title arvo-regular-italic" id="sign-in-modalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="sign-in-form">
+            <form>
+              <div class="mb-3">
+                <label for="signInEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signInEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="signInPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signInPassword" required>
+              </div>
+              <button type="submit" class="btn btn-sign-in w-100">Sign In</button>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <span class="toggle-link" id="to-sign-up">Sign Up</span></p>
+          </div>
+          <div id="sign-up-form" style="display:none;">
+            <form>
+              <div class="mb-3">
+                <label for="signUpUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="signUpUsername" required>
+              </div>
+              <div class="mb-3">
+                <label for="signUpEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signUpEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="signUpPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signUpPassword" required>
+              </div>
+              <button type="submit" class="btn btn-sign-in w-100">Sign Up</button>
+            </form>
+            <p class="text-center mt-3">Already have an account? <span class="toggle-link" id="to-sign-in">Sign In</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>            
+    
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="sign-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" id="toast-title">Success</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="toast-message">
+        Your account has been created successfully!
+      </div>
+    </div>
   </div>
 
 
@@ -267,11 +327,520 @@
     <img src="images/10-new-in.PNG" class="carousel-image" alt="Imagen 4">
     <img src="images/11-new-in.jpeg" class="carousel-image" alt="Imagen 1">
     <img src="images/12-new-in.jpg" class="carousel-image" alt="Imagen 2">
-    
+    <img src="images/01-new-in.PNG" class="carousel-image" alt="Imagen 1">
+    <img src="images/02-new-in.jpg" class="carousel-image" alt="Imagen 2">
+    <img src="images/03-new-in.jpg" class="carousel-image" alt="Imagen 3">
+    <img src="images/04-new-in.jpg" class="carousel-image" alt="Imagen 4">
+    <img src="images/05-new-in.jpg" class="carousel-image" alt="Imagen 1">
+    <img src="images/06-new-in.PNG" class="carousel-image" alt="Imagen 2">
+    <img src="images/07-new-in.jpg" class="carousel-image" alt="Imagen 1">
+    <img src="images/08-new-in.jpg" class="carousel-image" alt="Imagen 2">
+    <img src="images/09-new-in.jpg" class="carousel-image" alt="Imagen 3">
+    <img src="images/10-new-in.PNG" class="carousel-image" alt="Imagen 4">
+    <img src="images/11-new-in.jpeg" class="carousel-image" alt="Imagen 1">
+    <img src="images/12-new-in.jpg" class="carousel-image" alt="Imagen 2">
   </div>
 </div>
 
-     
+
+<div id="carousel-destacados-index-xl" class="carousel slide d-xl-block d-lg-block d-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col-4">
+              <div class="card stool">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-taburete-2.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-taburete-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Rosewood</strong>
+                          <em class="product-price">330$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card design-chair">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-silla-4.png" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-silla-4.png" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Lily</strong>
+                          <em class="product-price">223$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <span class="badge-offer">LAST OFFER</span>
+                      <a href="item.html">
+                      <img src="images/00-sillon-1.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Juniper</strong>
+                          <em class="product-price">470$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col-4">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <a href="item.html">
+                      <img src="images/00-sillon-5.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-5.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Lavender</strong>
+                          <em class="product-price">280$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-sillon-2.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Orchid</strong>
+                          <em class="product-price">130$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card stool">
+                  <div class="image-container-card">
+                      <a href="item.html">
+                      <img src="images/00-taburete-3.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-taburete-3.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Pine</strong>
+                          <em class="product-price">209$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+            <div class="col-4">
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                         <img src="images/00-taburete-1.PNG" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-taburete-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">Fern</strong>
+                            <em class="product-price">109$</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                         <img src="images/00-silla-2.png" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-silla-2.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">Willow</strong>
+                            <em class="product-price">145$</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <a href="item.html">
+                         <img src="images/00-silla-7.png" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-silla-7.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">Aloe</strong>
+                            <em class="product-price">149$</em>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-destacados-index-xl" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-destacados-index-xl" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="carousel-destacados-index-md" class="carousel slide d-lg-none d-md-block d-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col-6">
+              <div class="card stool">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-taburete-2.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-taburete-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Rosewood</strong>
+                          <em class="product-price">330$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="card design-chair">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-silla-4.png" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-silla-4.png" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Lily</strong>
+                          <em class="product-price">223$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col-6">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <a href="item.html">
+                      <img src="images/00-sillon-5.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-5.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Lavender</strong>
+                          <em class="product-price">280$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-sillon-2.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Orchid</strong>
+                          <em class="product-price">130$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+            <div class="col-6">
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                         <img src="images/00-taburete-1.PNG" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-taburete-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">Fern</strong>
+                            <em class="product-price">109$</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card design-chair">
+                    <div class="image-container-card">
+                        <span class="badge-offer">LAST OFFER</span>
+                        <a href="item.html">
+                         <img src="images/00-silla-2.png" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-silla-2.png" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">Willow</strong>
+                            <em class="product-price">145$</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-destacados-index-md" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-destacados-index-md" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div id="carousel-destacados-index-sm" class="carousel slide d-md-none d-block" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col">
+              <div class="card stool">
+                  <div class="image-container-card">
+                      <span class="badge-new">NEW</span>
+                      <a href="item.html">
+                      <img src="images/00-taburete-2.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-taburete-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Rosewood</strong>
+                          <em class="product-price">330$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="container-fluid p-3">
+        <div class="row g-3">
+          <div class="col">
+            <div class="card design-chair">
+                <div class="image-container-card">
+                    <span class="badge-new">NEW</span>
+                    <a href="item.html">
+                    <img src="images/00-silla-4.png" class="image-default-card" alt="Imagen principal">
+                    <img src="images/01-silla-4.png" class="image-hover-card" alt="Imagen en hover">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <strong class="product-name">Lily</strong>
+                        <em class="product-price">223$</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+          <div class="col">
+              <div class="card armchair">
+                  <div class="image-container-card">
+                      <a href="item.html">
+                      <img src="images/00-sillon-5.PNG" class="image-default-card" alt="Imagen principal">
+                      <img src="images/01-sillon-5.PNG" class="image-hover-card" alt="Imagen en hover">
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-content">
+                          <strong class="product-name">Lavender</strong>
+                          <em class="product-price">400$</em>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+
+      <div class="container-fluid p-3">
+        <div class="row g-3">
+          <div class="col">
+            <div class="card armchair">
+                <div class="image-container-card">
+                    <span class="badge-new">NEW</span>
+                    <a href="item.html">
+                    <img src="images/00-sillon-2.PNG" class="image-default-card" alt="Imagen principal">
+                    <img src="images/01-sillon-2.PNG" class="image-hover-card" alt="Imagen en hover">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <strong class="product-name">armchair</strong>
+                        <em class="product-price">400$</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      
+      <div class="container-fluid p-3">
+        <div class="row g-3 ">
+            <div class="col">
+                <div class="card stool">
+                    <div class="image-container-card">
+                        <span class="badge-new">NEW</span>
+                        <a href="item.html">
+                         <img src="images/00-taburete-1.PNG" class="image-default-card" alt="Imagen principal">
+                         <img src="images/01-taburete-1.PNG" class="image-hover-card" alt="Imagen en hover">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <strong class="product-name">stool</strong>
+                            <em class="product-price">400$</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container-fluid p-3">
+       <div class="row g-3">
+        <div class="col">
+          <div class="card design-chair">
+              <div class="image-container-card">
+                  <span class="badge-offer">LAST OFFER</span>
+                  <a href="item.html">
+                   <img src="images/00-silla-2.png" class="image-default-card" alt="Imagen principal">
+                   <img src="images/01-silla-2.png" class="image-hover-card" alt="Imagen en hover">
+                  </a>
+              </div>
+              <div class="card-body">
+                  <div class="card-content">
+                      <strong class="product-name">Design Chair</strong>
+                      <em class="product-price">400$</em>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-destacados-index-sm" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-destacados-index-sm" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
       <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-6 col-md-4 position-relative">
@@ -373,7 +942,48 @@
       </div>
     </div>
     
-    <!-- JQUERY -->
+    <div class="container-fluid footer-container g-0">
+      <div class="row row-cols-2 row-cols-md-4 p-3 px-5 mx-3">
+        <div class="col p-3">
+          <div class="dm-sans-bold">Contact</div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">MON - FRI</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">8:30AM - 4:30PM</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">info@cedar.com</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">+34 932 20 38 58</a></div>
+        </div>
+        <div class="col p-3 ">
+          <div class="dm-sans-bold">About</div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Our project</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Our legacy</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Sustainability</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Blog</a></div>
+        </div>
+        <div class="col p-3">
+          <div class="dm-sans-bold">Support</div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">FAQs</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Payments</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Shipping</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Returns and exchanges</a></div>
+        </div>
+        <div class="col p-3">
+          <div class="dm-sans-bold">Legal</div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Legal notice</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">General terms and conditions</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Privacy and cookie policy</a></div>
+          <div><a href="#" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover">Warranty</a></div>
+        </div>
+      </div>
+      <div class="text-center">
+          <div>
+            <p><a href="#top" class="link-light link-offset-1 link-underline-opacity-0 link-underline-opacity-100-hover unlock-regular" style="font-size:1.5rem;"><span class="dm-sans-regular" style="font-size:1rem;"> © </span>Cedar</a></p>
+          </div>
+        <div class="pb-4" style="font-size:0.75rem;">
+          ALL RIGHTS RESERVED
+        </div>
+      </div>
+    </div>
+
+        <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
        <!-- JAVASCRIPT BOOTSTRAP -->
